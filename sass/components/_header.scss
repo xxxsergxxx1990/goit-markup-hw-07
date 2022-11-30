@@ -1,0 +1,129 @@
+.page-header__decor{
+
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-family: Raleway;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #000000;
+}
+.logo__item{
+    color: var(--text-accent);
+   
+}
+
+
+.page-header__nav{
+    margin-left: 93px;
+}
+.page-header__item:not(last-child){
+    margin-right: 50px;
+}
+
+
+.page-header__list{
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    padding-left: 0;
+}
+
+
+
+.page-header__link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--text-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    
+
+
+    &:hover,
+    &:focus{
+    color: var(--text-accent);
+    }
+}
+
+
+
+.current{
+    position: relative;
+    color: var(--text-accent);
+}
+.current::after{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: var(--text-accent);
+}
+
+.page-header__connection{
+    color: var(--text-secondColor);
+    margin-left: auto;
+    margin-right: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    fill: #757575;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+
+    &:focus,
+    &:hover{
+    color: var(--text-accent);
+    fill: var(--text-accent);
+}
+}
+.header__icon{
+    
+    margin-right: 10px;
+}
+
+.header__connection{
+    margin: 0;
+}
+
+.page-header__tel{
+    color:  var(--text-secondColor);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    fill: #757575;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+
+    &:focus,
+    &:hover{
+    color: var(--text-accent);
+    fill: var(--text-accent);
+}
+}
